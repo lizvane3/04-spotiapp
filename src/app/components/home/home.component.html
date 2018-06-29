@@ -1,0 +1,12 @@
+<!-- <ul>
+  <li *ngFor="let pais of paises">{{ pais.name }} - {{ pais.population | number}} - {{pais.area}}</li>
+</ul> -->
+<app-loading *ngIf="loading"></app-loading>
+<app-error [errorAlert]="messageError" *ngIf="error"></app-error>
+<!-- <div *ngIf="error" class="alert alert-danger animated fadeIn">
+    <h3>Error</h3>
+    <p>
+        {{ messageError }}
+    </p>
+</div> -->
+<app-cards [cards]='newSongs'></app-cards>
